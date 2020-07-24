@@ -1,7 +1,7 @@
 //iniciar variaveis
 let board = ['','','','','','','','','']
 let PlayerTime = 0
-let gameOver = false;
+let gameOver = false
 
 let symbols = ['o', 'x']
 let winStates = [
@@ -49,4 +49,10 @@ function isWin(){
         }
     }
     return false
+}
+
+function reset(){
+    board.fill('') 
+    PlayerTime = 0
+    gameOver = false
 }

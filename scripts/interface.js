@@ -30,17 +30,13 @@ function updateSqaure(position){
 
 
 
-function updateSqaures(){
+function resetBtn(){
+
 
     let squares = document.querySelectorAll(".square")
 
     squares.forEach((square) => {
-        let position = square.id
-        let symbol = board[position]
-
-
-        if(symbol != ''){
-            square.innerHTML = `<div class='${symbol}'></div>` 
-        }
+        reset()
+        square.innerHTML = ''
     })
 }
